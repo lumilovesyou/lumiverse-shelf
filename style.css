@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    
+    background-color: black;
+    background-image: radial-gradient(#222222, #000);
+}
+
+#alignShelf {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#spacer {
+    width: 5vw;
+}
+
+.pixel {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    image-rendering: -moz-crisp-edges;
+}
+
+.holder {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+
+#youtube {
+    position: absolute;
+    bottom: 0;
+    align-self: flex-start;
+}
+
+a {
+    height: 10vh;
+}
+
+a:hover {
+    rotate: -6deg;
+    margin-bottom: 1%;
+    align-self: flex-start;
+    margin: 0;
+}
+
+.object {
+    height: 10vh;
+    width: auto;
+    filter: drop-shadow(0 0 20px #ffffff81);
+}
+
+#shelf {
+    aspect-ratio: 106/140;
+    max-width: 100vw;
+    height: 95vh;
+}
+
+.floor {
+    background-color: red;
+    height: 15vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.one {
+    top: 10.5vh;
+    background-color: blue;
+    align-items: end;
+    flex-direction: row;
+}
+
+.two {
+    top: 30.8vh;
+    background-color: yellow;
+}
+
+.three {
+    top: 51.8vh;
+    background-color: orange;
+}
+
+.four {
+    top: 71.5vh;
+    height: 18vh;
+    background-color: green;
+}
+
+.hidden {
+    background-color: #ffffff00 !important;
+}
