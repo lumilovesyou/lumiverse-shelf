@@ -25,29 +25,20 @@ body {
     image-rendering: -moz-crisp-edges;
 }
 
-.holder {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: end;
-    flex-direction: column;
-}
-
-#youtube {
-    position: absolute;
-    bottom: 0;
-    align-self: flex-start;
-}
-
 a {
     height: 10vh;
 }
 
 a:hover {
-    rotate: -6deg;
     margin-bottom: 1%;
-    align-self: flex-start;
-    margin: 0;
+}
+
+a .left:hover {
+    rotate: -6deg;
+}
+
+a .right:hover {
+    rotate: 6deg;
 }
 
 .object {
@@ -62,6 +53,15 @@ a:hover {
     height: 95vh;
 }
 
+@media only screen and (max-device-width : 500px){
+    #shelf {
+        aspect-ratio: 140/106;
+        width: 100vw;
+        height: 132vw;
+        background-color: rebeccapurple;
+    }
+}
+
 .floor {
     background-color: red;
     height: 15vh;
@@ -69,13 +69,13 @@ a:hover {
     position: absolute;
     display: flex;
     justify-content: center;
+    align-items: end;
+    flex-direction: row;
 }
 
 .one {
     top: 10.5vh;
     background-color: blue;
-    align-items: end;
-    flex-direction: row;
 }
 
 .two {
