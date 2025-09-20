@@ -1,6 +1,6 @@
 const floors = ["one", "two", "three", "four"];
 
-// to-do: mobile support, add more projects, fill in ucrl link
+// to-do: mobile support
 
 addEventListener("DOMContentLoaded", () => {
     objects = [
@@ -9,7 +9,7 @@ addEventListener("DOMContentLoaded", () => {
         ["s", 0],
 
         ["s", 1],
-        ["./assets/images/objects/cosmic-reach.png", 1, "fill me in!", 0, 1],
+        ["./assets/images/objects/cosmic-reach.png", 1, "https://github.com/lumilovesyou/Unofficial-Cosmic-Reach-Launcher", 0, 1],
 
         ["s", 3],
         ["s", 3],

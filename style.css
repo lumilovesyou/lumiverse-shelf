@@ -53,12 +53,15 @@ a .right:hover {
     height: 95vh;
 }
 
-@media only screen and (max-device-width : 500px){
+@media only screen and (max-device-width : 660px){
     #shelf {
         aspect-ratio: 140/106;
         width: 100vw;
         height: 132vw;
-        background-color: rebeccapurple;
+    }
+
+    .one {
+        top: 15vh !important;
     }
 }
 
