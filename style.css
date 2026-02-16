@@ -1,15 +1,14 @@
 body {
-    padding: none;
-    margin: none;
+    padding: 0;
+    margin: 0;
 }
 
 center {
-    padding: none;
-    margin: none;
+    padding: 0;
+    margin: 0;
     height: 100vh;
-    border: 1px solid red;
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
