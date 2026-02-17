@@ -12,3 +12,91 @@ center {
     justify-content: center;
     align-items: center;
 }
+
+#shelfContainingDiv {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#shelfContainingDiv img {
+    height: 50%;
+}
+
+#shelvesHolder {
+    position: absolute;
+    height: 50%;
+    aspect-ratio: 802/1057;
+    /*background-color: #ff000063;*/
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+
+center {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#shelfContainingDiv {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#shelfContainingDiv img {
+    height: 80%;
+}
+
+#shelvesHolder {
+    position: absolute;
+    height: 80%;
+    aspect-ratio: 802/1057;
+}
+
+#shelfOne, #shelfTwo, #shelfThree, #shelfFour {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    & img {
+        align-self: center;
+        cursor: pointer;
+        height: 50%;
+        &:hover {
+            rotate: 7deg;
+            filter: drop-shadow(0 0 20rem white)
+        }
+    }
+}
+
+#shelfOne {
+    height: 25%;
+}
+
+#shelfTwo {
+    height: 21%;
+}
+
+#ShelfThree {
+    height: 22%;
+}
+
+#shelfFour {
+    height: 24%;
+}
