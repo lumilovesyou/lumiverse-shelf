@@ -1,3 +1,7 @@
+:root {
+    --rotate: 7deg
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -71,18 +75,29 @@ center {
 #shelfOne, #shelfTwo, #shelfThree, #shelfFour {
     width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: end;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
 
     & img {
-        align-self: center;
         cursor: pointer;
-        height: 50%;
         &:hover {
-            rotate: 7deg;
+            rotate: var(--rotate);
             filter: drop-shadow(0 0 20rem white)
         }
     }
+}
+
+[data-size="large"] {
+    width: 20%;
+}
+
+[data-size="medium"] {
+    width: 10%;
+}
+
+[data-size="small"] {
+    width: 5%;
 }
 
 #shelfOne {
@@ -91,12 +106,22 @@ center {
 
 #shelfTwo {
     height: 21%;
+    & img:nth-child(2) {
+        height: 60%;
+    }
 }
 
-#ShelfThree {
+#shelfThree {
     height: 22%;
+    & img {
+        height: 50%;
+    }
 }
 
 #shelfFour {
-    height: 24%;
+    height: 22%;
+    justify-content: end;
+    & img {
+        height: 30%;
+    }
 }
